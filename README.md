@@ -17,6 +17,35 @@ Please let me know who is responsible for which task <br/>
 
 
 
+---
+Ok, I have checked the first one, it's a good start and gives lots of insight. Some ranges need to be fixed, for example wind speed, which does not show all the data, and i don't know why it doesn't include "day.csv" ?
+
+for "KDD_1Preprocessing.py" We also need some plots of all dependent attributes so we can show in our presentation if some attributes are not needed and justify the reduction of some dimensions. for instance, 'temp' and 'atemp'
+
+in "KDD_2Modeling.py," I have included all models and their evaluations
+because they are very related codes, but you can add visualizations of evaluations in "KDD_5Evaluation.py" file. You can call the "modelSelector" function from "KDD_2Modeling.py" and use the outputs to plot all models vs evaluation parameters like
+ROC Curve and AUC: 'auc'
+False Positive Rate: 'fpr', True Positive Rate: 'tpr'
+Accuracy: 'acc', Precision: 'prec', Recall: 'rec', F1-Score: 'f1', Kappa Score: 'kappa', Confusion Matrix: 'cm'
+
+---
+
+beside those plots i mentioned to Martina, we need these steps for "KDD_1Preprocessing.py":
+
+1-Handling duplicate data
+2-Handling invalid data (e.g., negative age values or dates that are in the future)
+3-Handling outliers and extreme values
+4-Handling missing data (e.g., imputation or removal)
+5-Handling data normalization or scaling
+6-Removing unnecessary columns or features, reducing dimension, or reducing dependent attributes
+7-Addressing imbalance in the target attribute
+[18:08, 11/05/2023] Milad: And this is just for the code, and after that we have these things to do:
+
+- writing 1500 words report for 
+- create a power point 
+- get ready for presentation
+
+so I think we should finish the code by this monday (15th) and then spend the rest on report and ...
 
 
 

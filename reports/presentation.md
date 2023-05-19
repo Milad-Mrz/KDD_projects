@@ -1,4 +1,3 @@
-link to google slides
+# link to slides:
 
-
-https://docs.google.com/presentation/d/1wP0fqsW1iGGIll2JkRNKVQ6F1yX-PZzuvZWdI88EdyA/edit?usp=sharing
+https://docs.google.com/presentation/d/1xZKR6ZJchwrgGTtsRR4HvzVONZCMduHKyHPL7_jmc0o/edit?usp=sharing
