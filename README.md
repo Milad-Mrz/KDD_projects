@@ -26,7 +26,7 @@ Please let me know who is responsible for which task <br/>
 ## A Knowledge Discovery and Data Mining Analysis of Hourly Bike-Sharing Patterns
 
 <p align="center">
-  <img src="./images/DALL·E 2023-04-17 16.00.09.png" alt="Social_Biking">
+  <img src="./images/3.png" alt="Social_Biking" style="max-height: 200px;">
 </p>
 
 1- **Introduction:** 
