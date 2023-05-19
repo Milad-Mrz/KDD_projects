@@ -260,9 +260,10 @@ def modelSelector(data, target_attribute):
     best_model =  gradientBoosting(X_train, y_train, X_test, y_test)
     model_list.append(best_model)
 
-
     parameter_list = ['acc', 'prec', 'rec', 'f1', 'kappa', 'fpr', 'tpr', 'auc', 'cm']
+    models_names = ['LinearRegression_', 'Gaussian', 'KNN', 'RandomForest', 'DecisionTree', 'NeuralNetwork', 'SupportVectorRegression', 'GradientBoosting']
     final_models = []
+    
     for parameter in parameter_list:
         for opt_model in model_list:
             if opt_model.best_eval[parameter] > previous:
@@ -271,6 +272,13 @@ def modelSelector(data, target_attribute):
                 chosen_model_best_eval = opt_model.best_eval
         
                 previous = opt_model.best_eval[parameter]
-        print(parameter, opt_model.model.index(chosen_model))
-        final_models.append([parameter, opt_model.model.index(chosen_model), chosen_model])
+        model_index = opt_model.model.index(chosen_model)
+        model_name = models_names[model_index]
+        final_models.append([parameter, model_name , chosen_model, chosen_model_best_eval, chosen_model_base_eval])
+        
+        # save final models
+        file_name = '../models/' + str(model_name) + '.joblib'
+        dump(chosen_model, file_name)
+
+    print(final_models)
     return final_models, model_list
